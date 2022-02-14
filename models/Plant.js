@@ -19,7 +19,7 @@ Plant.init(
         type: DataTypes.STRING,
         allowNull: false,
     },
-    climate: {
+    season: {
         type: DataTypes.STRING,
         allowNull: false,
     },
