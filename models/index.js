@@ -2,7 +2,7 @@ const User = require('./User');
 const Plant = require('./Plant');
 const Garden = require('./Garden');
 
-User.hasMany(Plant, {
+User.belongsToMany(Plant, {
     through: Garden
 });
 
