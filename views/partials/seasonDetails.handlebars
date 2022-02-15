@@ -1,7 +1,8 @@
 <!--localhost:3001/ /id-->
 <section class="card">
-  <a href="/plantss/{{id}}"><!--check this-need to change this route /plantss-->
+
+  <a href="/plants/{{id}}">
     <header>{{plant.season}}</header><!-- name of season-->
-    <img src="/public/images/" alt="{{plant.[0].name}}"><!-- name of plant-->
+    <img src="/images/{{plant.[0].filename}}" alt="{{plant.[0].name}}"><!-- name of plant-->
   </a>
 </section>
