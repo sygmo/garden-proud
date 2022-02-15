@@ -9,46 +9,48 @@
     <!--CSS only-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="/css/">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <section class="hero is-primary">
-        <div class="hero-body">
-            <p class="title">Garden Proud</p>
-            <p class="subtitle">
-            For Gardening Enthusiasts
-            </p>
+    <div id="page-container">
+        <section class="hero is-primary">
+            <div class="hero-body">
+                <p class="title">Garden Proud</p>
+                <p class="subtitle">
+                For Gardening Enthusiasts
+                </p>
+            </div>
+        </section>
+        <div class="flex-column justify-space-around">
+            <header class="display-flex justify-space-between align-center p-2">
+                <nav>
+                    <a href="/">Home</a>
+                    <!-- Conditionally render login or logout links -->
+                    <!-- for profile page-->
+                    {{#if loggedIn}}
+                    <a href="/profile">My Garden</a> |
+                    <button class="no-button" id="logout">Logout</button>
+                    {{else}}
+                    <a href="/login">Login</a>
+                    {{/if}}
+                </nav>
+            </header>
+            <main class="container container-fluid mt-5">
+                <!-- Render the sub layout -->
+                <div>
+                    {{{ body }}}
+                </div>
+            </main>
+
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>© 2022</p>
+                </div>
+            </footer>
         </div>
-    </section>
-    <div class="flex-column justify-space-around">
-        <header class="display-flex justify-space-between align-center p-2">
-            <nav>
-                <a href="/">Home</a>
-                <!-- Conditionally render login or logout links -->
-                <!-- for profile page-->
-                {{#if loggedIn}}
-                <a href="/profile">My Garden</a> |
-                <button class="no-button" id="logout">Logout</button>
-                {{else}}
-                <a href="/login">Login</a>
-                {{/if}}
-            </nav>
-        </header>
-        <main class="container container-fluid mt-5">
-            <!-- Render the sub layout -->
-            <div>
-                {{{ body }}}
-            </div>
-        </main>
-
-        <footer class="footer">
-            <div class="content has-text-centered">
-                <p>© 2022</p>
-            </div>
-        </footer>
     </div>
-
+    
     <!-- Render script for logged in users only -->
     {{#if loggedIn}}
     <script src="/js/logout.js"></script>
