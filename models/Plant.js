@@ -24,7 +24,7 @@ Plant.init(
         allowNull: false,
     },
     description: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
     },
     fileName: {
         type: DataTypes.STRING,
