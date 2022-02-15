@@ -16,30 +16,31 @@ const loginFormHandler = async (event) => {
   
       if (response.ok) {
         // If successful, redirect the browser to the profile page
-        document.location.replace('/profile');
+        document.location.replace('/profile');//need to check this /profile
       } else {
         alert(response.statusText);
       }
     }
   };
-  
+
  //signup 
   const signupFormHandler = async (event) => {
     event.preventDefault();
   
-    const name = document.querySelector('#name-signup').value.trim();
+    
     const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
+    //need to include for confirm password
   
-    if (name && email && password) {
+    if ( email && password) {//need to include for confirm password
       const response = await fetch('/api/users', {
         method: 'POST',
-        body: JSON.stringify({ name, email, password }),
+        body: JSON.stringify({ email, password }),
         headers: { 'Content-Type': 'application/json' },
       });
   
       if (response.ok) {
-        document.location.replace('/profile');
+        document.location.replace('/profile');//need to check this /profile 
       } else {
         alert(response.statusText);
       }
