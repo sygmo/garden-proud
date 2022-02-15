@@ -1,0 +1,51 @@
+[
+    {
+        "common_name": "Windflower",
+        "latin_name": "Anemone blanda",
+        "season": "autumn",
+        "description": "Anemone is a genus of about 120 species of perennial flowering plants in the family Ranunculaceae, native to Europe, North America and Japan. The flower stem bears one or several beautiful flowers, with an involucre of three leaflets below each flower, giving this plant an spectacular appearance. Whether tall-growing or low-growing, these flowers will add beauty to your garden!",
+        "fileName": "anemone.jpeg"
+    },
+    {
+        "common_name": "Phlox",
+        "latin_name": "Phlox paniculata",
+        "season": "autumn",
+        "description": "Phlox is a genus of about 70 species of annuals and perennials in the family Polemoniaceae, mostly native to North America. These plants have thick, strong stems, lance-shaped leaves and clusters of small, star-shaped flowers. The flowers have five petals that come in a wide range of colors. They are hardy and easy to grow in a variety of conditions.",
+        "fileName": "phlox.jpeg"
+    },
+    {
+        "common_name": "Sunflower",
+        "latin_name": "Helianthus annuus",
+        "season": "summer",
+        "description": "Helianthus, better known as Sunflower, is a genus of about 70 species of annuals and perennials in the daisy family (Asteraceae), native to North America, with a few species from South America. Sunflowers have big, daisy-like flowers in bright colors often with a contrasting darker centre and large, bristly, dark green leaves. These sun-loving plants are recognized worldwide for their beauty, as well as agricultural importance.",
+        "fileName": "sunflower.jpeg"
+    },
+    {
+        "common_name": "Coneflower",
+        "latin_name": "Echinacea",
+        "season": "summer",
+        "description": "Echinacea is a genus of about 10 species in the family Asteraceae, native to North America. Echinacea, commonly called Coneflower, has attractive and colorful daisy-like flowers, with cone-shaped central disc surrounded by a ring of petal-like rays. It has lance-shaped or oval-shaped dark green leaves and tall, slender, hairy stem that can reach up to 120 cm (4 ft) in height. These perennials are easy to maintain once you know the secrets to meeting their needs. They are heat and drought tolerant and will attract birds and pollinators in your garden.",
+        "fileName": "coneflower.jpeg"
+    },
+    {
+        "common_name": "Camellia",
+        "latin_name": "Camellia",
+        "season": "spring",
+        "description": "Camellia is a genus of about 250 species of evergreen shrubs and trees in the Theaceae family, native to eastern Asia. Their perfectly shaped blooms come in a remarkable range of sizes, colors and forms. It is always lovely to see these long-blooming flowers in the garden. Camellias thrive best in partially shaded areas because they are sensitive to bright light. They are great for balconies, terraces, woodland gardens or in containers.",
+        "fileName": "camellia.jpeg"
+    },
+    {
+        "common_name": "Tulip",
+        "latin_name": "Tulipa",
+        "season": "spring",
+        "description": "Tulips belong to the genus Tulipa in the lily family (Liliaceae). There are around 100 species and over 3000 different varieties of cultivated Tulips. They grow wild in Central Asia, through Siberia to China. Tulips are one of the most popular spring flowers and one of the most popular flowers worldwide. They come in many varieties of colors and shapes and are great for pots, borders and as cut flowers.",
+        "fileName": "tulip.jpeg"
+    },
+    {
+        "common_name": "Primrose",
+        "latin_name": "Primula",
+        "season": "spring",
+        "description": "Primula is a genus of more than 400 species of herbaceous perennials in the family Primulaceae, widely distributed throughout the world. These early bloomers come in a variety of sizes, shapes and colors. They are one of the most popular ornamental plants. With their showy, bright, vibrant flowers that come in array of colors, Primulas are ideal for front borders, beds, edging, paths and walkways, shade gardens and rock gardens.",
+        "fileName": "primrose.jpeg"
+    }
+]
