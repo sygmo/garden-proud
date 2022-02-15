@@ -2,8 +2,9 @@
   <h3 class="season-name">{{plant.season}}</h3><!--need to look back on homeroute tp check name-->
  
   <section class="flex-row justify-center">
-    {{#each plantss.plants as |plant|}}<!-- season details homepage as plantss,plantss/id as plant-->
-    {{> plant-details}}
+    {{#each plants as |plant|}}<!-- season details homepage as plantss,plantss/id as plant-->
+    {{!-- {{> plant-details}} --}}
+    <h1>{{plant.common_name}}</h1>
     {{/each}}
   </section>
 </section>
