@@ -21,6 +21,7 @@ main {
     background-color: #b3dbcf;
   }  
 
-img {
-  width: 100px;
+.link-card {
+  height: 200px;
+  width: 200px;
 }
