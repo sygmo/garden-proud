@@ -11,3 +11,12 @@ footer {
     height: 2.5rem;
     padding: 2rem 1rem 4rem !important;
 }
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+  nav {
+    display: flex;
+    background-color: #b3dbcf;
+  }  
