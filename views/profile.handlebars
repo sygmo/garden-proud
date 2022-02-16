@@ -1,1 +1,11 @@
 <div>this is the profile page</div>
+
+<section class="container">
+ 
+  <section class="flex-row justify-center">
+    {{#each plants as |plant|}}<!-- season details homepage as plantss,plantss/id as plant-->
+    {{!-- {{> plant-details}} --}}
+    <a href="/plant/{{plant.id}}">{{plant.common_name}}</a>
+    {{/each}}
+  </section>
+</section>
