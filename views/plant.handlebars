@@ -1,4 +1,9 @@
 {{!-- just a basic layout of plant page, once displayed we can style it more --}}
+<!--save button-->
+  <button class="save-button" id="save" data-id={{plant.id}}>Save</button>
+
+
+
 <figure class = "image is-square">
     <img src="/images/{{plant.fileName}}">
 </figure>
@@ -14,3 +19,4 @@
 <div class="box">
     <p>This plant reaches maturity in {{plant.season}}</p>
 </div>
+<script src="/js/plant.js"></script>
