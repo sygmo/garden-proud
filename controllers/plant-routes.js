@@ -20,9 +20,14 @@ console.log(plant)
 
 //post route for plant to save
 router.post('/:id', async (req, res) => {
-    console.log(req.params.id)
+    console.log(req.session.user_id);
     try {
-        const dbPlantData = await Garden.create(req.params.id);
+        const dbPlantData = await Garden.create({ 
+            user_id: req.session.user_id, 
+            plant_id: req.params.id
+        }, {
+            fields: ["user_id", "plant_id"]
+        });
           
         const plant = dbPlantData.get({ plain: true});
 //console.log(plant)
