@@ -37,4 +37,19 @@ router.post('/:id', async (req, res) => {
     }
 });
 
+router.get('/profile', async (req, res) => {
+    try {
+        const dbPlantData = await Plant.findAll({
+            where: Garden.plant_id = Plant.id,
+        });
+        const plants = dbPlantData.map((plant) =>
+        plant.get({ plain: true })
+        );
+        res.render('profile', {
+            plants
+        });
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
 module.exports = router;
