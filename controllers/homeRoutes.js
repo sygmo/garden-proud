@@ -37,7 +37,7 @@ console.log(userData)
     console.log(user)
     res.render('profile', {
       ...user,
-      logged_in: true
+      loggedIn: true
     });
   } catch (err) {
     console.log(err)
