@@ -9,7 +9,10 @@ router.get('/:id', async (req, res) => {
           
         const plant = dbPlantData.get({ plain: true});
 console.log(plant)
-        res.render('plant', { plant });
+        res.render('plant', { 
+            plant,
+            loggedIn: req.session.loggedIn 
+        });
     } catch (err) {
         res.status(500).json(err);
     }
