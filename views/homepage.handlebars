@@ -1,4 +1,28 @@
-{{#each seasons as |season|}}
-{{!-- {{> seasonDetails}} --}}
-<a href="/season/{{season}}">{{season}}</a>
-{{/each}}
+<div class="columns is-multiline">
+    {{#each seasons as |season|}}
+    <div class="column">
+        <a href="/season/{{season}}">
+            <div class="card link-card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        {{#eq season "Spring"}}
+                        <img src="/images/tulip.jpeg" alt="seasonal flowers">
+                        {{/eq}}
+                        {{#eq season "Summer"}}
+                        <img src="/images/sunflower.jpeg" alt="seasonal flowers">
+                        {{/eq}}
+                        {{#eq season "Autumn"}}
+                        <img src="/images/mums.jpeg" alt="seasonal flowers">
+                        {{/eq}}
+                    </figure>
+                </div>
+                <header class="card-header">
+                    <p class="card-header-title">
+                        {{season}}
+                    </p>
+                </header>
+            </div>
+        </a>
+    </div>
+    {{/each}}
+</div>
