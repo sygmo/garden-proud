@@ -49,8 +49,6 @@ footer {
     backdrop-filter: brightness(60%);
 }
 
-
-
 .login-card {
     
   max-width: 100%;
@@ -100,4 +98,9 @@ nav {
 
 .plantNames {
     color: black;
+}
+
+.garden-title {
+    padding-bottom: 30px;
+    font-weight: bold;
 }
