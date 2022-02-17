@@ -11,12 +11,29 @@ footer {
     height: 2.5rem;
     padding: 2rem 1rem 4rem !important;
 }
-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
+
+  .login-card {
+    
+    max-width: 100%;
+    padding: 45px;
+    border: 3px solid #363b39;
+    border-radius: 0.3rem;
+    border-style: double;
+    border-width: thick;
+    background-color: #e6ecec;
+    color: black;
+
   }
-  nav {
-    display: flex;
-    background-color: #b3dbcf;
-  }  
+  .input{
+    border: 2px solid rgb(156, 153, 153);
+    padding: 20px;
+  
+  }
+  .page-title{
+    padding: 10px;
+    font-weight: bold;
+  }
+  .button{
+    font-weight: bold;
+  }
+
