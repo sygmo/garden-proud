@@ -3,13 +3,15 @@ const { User } = require('../../models');
 
 // CREATE new user
 router.post('/', async (req, res) => {
+  console.log("trying to create user")
   try {
     const dbUserData = await User.create({
       email: req.body.email,
       password: req.body.password,
     });
-
+console.log(req.session)
     req.session.save(() => {
+      req.session.user_id = dbUserData.id;//added
       req.session.loggedIn = true;
 
       res.status(200).json(dbUserData);
@@ -44,10 +46,10 @@ router.post('/login', async (req, res) => {
         .json({ message: 'Incorrect email or password. Please try again!' });
       return;
     }
-
+    console.log(req.session)
     req.session.save(() => {
       req.session.loggedIn = true;
-
+      req.session.user_id = dbUserData.id; //added
       res
         .status(200)
         .json({ user: dbUserData, message: 'You are now logged in!' });
@@ -68,5 +70,6 @@ router.post('/logout', (req, res) => {
     res.status(404).end();
   }
 });
+
 
 module.exports = router;

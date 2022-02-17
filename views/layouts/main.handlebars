@@ -13,48 +13,63 @@
 </head>
 
 <body>
-    <div id="page-container">
-        <section class="hero is-primary">
-            <div class="hero-body">
-                <p class="title">Garden Proud</p>
-                <p class="subtitle">
-                For Gardening Enthusiasts
-                </p>
+    <section class="hero pageHeader">
+
+        <div class="hero-body">
+            <div class="container has-text-centered titleContainer">
+                <div class="titleBlock">
+                    <h1 class="title">
+                        Garden Proud
+                    </h1>
+                    <h2 class="subtitle">
+                        For Gardening Enthusiasts
+                    </h2>
+                </div>
             </div>
-        </section>
-        <div class="flex-column justify-space-around">
-            <header class="display-flex justify-space-between align-center p-2">
-                <nav>
-                    <a href="/">Home</a>
-                    <!-- Conditionally render login or logout links -->
-                    <!-- for profile page-->
-                    {{#if loggedIn}}
-                    <a href="/profile">My Garden</a> |
-                    <button class="no-button" id="logout">Logout</button>
-                    {{else}}
-                    <a href="/login">Login</a>
-                    {{/if}}
-                </nav>
-            </header>
+        </div>
+    </section>
+    <nav class="navbar is-success" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand is-centered">
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu has-text-centered">
+    <div class="navbar-start is-centered">
+      <a class="navbar-item" href= "/">
+      Home
+      </a>
+        {{#if loggedIn}}
+            <a class="navbar-item" href="/profile">My Garden</a> </li>
+        {{else}}
+             <a class= "navbar-item" href="/login">Login</a>
+        {{/if}}  
+      </a>
+        {{#if loggedIn}}
+            <a class="navbar-item" id="logout">Logout</a> 
+        {{/if}}  
+    </div>
+  </div>
+</nav>
+        <div class="flex-column justify-space-around has-text-centered">
             <main class="container container-fluid mt-5">
                 <!-- Render the sub layout -->
-                <div>
+                <div class="season">
                     {{{ body }}}
                 </div>
             </main>
-
-            <footer class="footer">
-                <div class="content has-text-centered">
-                    <p>© 2022</p>
-                </div>
-            </footer>
         </div>
-    </div>
+    {{!-- </div> --}}
     
     <!-- Render script for logged in users only -->
     {{#if loggedIn}}
     <script src="/js/logout.js"></script>
     {{/if}}
+    
 </body>
 
 </html>

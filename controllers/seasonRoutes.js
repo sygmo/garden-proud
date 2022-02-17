@@ -18,7 +18,8 @@ router.get('/:season', async (req, res) => {
         );
 
         res.render('seasonpage', {
-            plants
+            plants,
+            loggedIn: req.session.loggedIn
         });
     } catch (err) {}
 });

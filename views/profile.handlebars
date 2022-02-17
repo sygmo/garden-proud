@@ -1,0 +1,11 @@
+<section class="container">
+  <h2 class="garden-title">My Garden</h2>
+ 
+  <div class="columns is-multiline">
+    {{#each plants as |plant|}}<!-- season details homepage as plantss,plantss/id as plant-->
+    <div class="column">
+      {{> plantDetails}}
+    </div>
+    {{/each}}
+  </div>
+</section>
