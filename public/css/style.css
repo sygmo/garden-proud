@@ -96,6 +96,10 @@ nav {
     justify-content: center;
 }
 
+.plantImage img{
+    max-height: 400px;
+}
+
 .plantNames {
     color: black;
 }
