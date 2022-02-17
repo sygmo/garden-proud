@@ -4,6 +4,15 @@
     padding-bottom: 2.5rem;
 }
 
+.plantCard {
+    width: 
+}
+
+.image{
+    width: 80%;
+    margin: 0 auto;
+}
+
 footer {
     position: absolute;
     bottom: 0;
@@ -50,4 +59,44 @@ footer {
 
 .hero-foot {
     
+}
+
+.login-card {
+    
+  max-width: 100%;
+  padding: 20px;
+  border: 3px solid #666968;
+  border-radius: 0.3rem;
+  border-style: double;
+  border-width: thick;
+  background-color: #e6ecec;
+  color: black;
+
+}
+.input{
+  border: 2px solid rgb(156, 153, 153);
+  padding: 10px;
+
+}
+.page-title{
+  padding: 10px;
+  font-weight: bold;
+}
+.button{
+  font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+nav {
+    display: flex;
+    background-color: #b3dbcf;
+}  
+
+.link-card {
+  height: 200px;
+  width: 200px;
 }
