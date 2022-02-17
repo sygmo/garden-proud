@@ -1,6 +1,6 @@
 # Garden Proud
 
-Developers: Jonah Foster, Sydney Mercier, Sahana, Ellie, 
+Developers: Ellie Dikova, Sahana Dinesh, Jonah Foster, Sydney Mercier  
 
 For: UT Austin Coding Bootcamp
 
