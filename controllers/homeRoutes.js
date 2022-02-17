@@ -28,7 +28,7 @@ router.get('/profile', async (req, res) => {
   console.log(req.session, "ww")
   try {
     // Find the logged in user based on the session ID
-    const userData = await User.findByPk(req.session.user_Id, {
+    const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
       include: [{ model: Plant ,through :Garden }],
     });
@@ -37,7 +37,7 @@ console.log(userData)
     console.log(user)
     res.render('profile', {
       ...user,
-      logged_in: true
+      loggedIn: true
     });
   } catch (err) {
     console.log(err)

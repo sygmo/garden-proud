@@ -9,7 +9,10 @@ router.get('/:id', async (req, res) => {
           
         const plant = dbPlantData.get({ plain: true});
 console.log(plant)
-        res.render('plant', { plant });
+        res.render('plant', { 
+            plant,
+            loggedIn: req.session.loggedIn 
+        });
     } catch (err) {
         res.status(500).json(err);
     }
@@ -17,9 +20,14 @@ console.log(plant)
 
 //post route for plant to save
 router.post('/:id', async (req, res) => {
-    console.log(req.params.id)
+    console.log(req.session.user_id);
     try {
-        const dbPlantData = await Garden.create(req.params.id);
+        const dbPlantData = await Garden.create({ 
+            user_id: req.session.user_id, 
+            plant_id: req.params.id
+        }, {
+            fields: ["user_id", "plant_id"]
+        });
           
         const plant = dbPlantData.get({ plain: true});
 //console.log(plant)
@@ -29,4 +37,19 @@ router.post('/:id', async (req, res) => {
     }
 });
 
+router.get('/profile', async (req, res) => {
+    try {
+        const dbPlantData = await Plant.findAll({
+            where: Garden.plant_id = Plant.id,
+        });
+        const plants = dbPlantData.map((plant) =>
+        plant.get({ plain: true })
+        );
+        res.render('profile', {
+            plants
+        });
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
 module.exports = router;

@@ -1,10 +1,15 @@
 const saveButtonHandler = async (event) => {
-    console.log("asas")
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
+
+      console.log("ID: " + id);
   
-      const response = await fetch(`/plant/${id}`, {
+      let response = await fetch(`/plant/${id}`, {
         method: 'POST',
+        body: JSON.stringify({ id: id.value }),
+        headers: {
+        'Content-Type': 'application/json',
+      },
       });
   
       if (response.ok) {
