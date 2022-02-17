@@ -4,10 +4,6 @@
     padding-bottom: 2.5rem;
 }
 
-.plantCard {
-    width: 
-}
-
 .image{
     width: 80%;
     margin: 0 auto;
@@ -53,13 +49,7 @@ footer {
     backdrop-filter: brightness(60%);
 }
 
-.pageLink {
-    color: white;
-}
 
-.hero-foot {
-    
-}
 
 .login-card {
     
@@ -99,4 +89,15 @@ nav {
 .link-card {
   height: 200px;
   width: 200px;
+}
+
+.plantImage {
+    padding: 10px;
+    max-width: 500px;
+    max-height: 500px;
+    justify-content: center;
+}
+
+.plantNames {
+    color: black;
 }
