@@ -13,17 +13,66 @@
 </head>
 
 <body>
-    <div id="page-container">
-        <section class="hero is-primary">
-            <div class="hero-body">
-                <p class="title">Garden Proud</p>
-                <p class="subtitle">
-                For Gardening Enthusiasts
-                </p>
+    {{!-- <div id="page-container"> --}}
+    <section class="hero pageHeader">
+    <!-- Hero head: will stick at the top -->
+
+    <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+            <div class="container has-text-centered titleContainer">
+                <div class="titleBlock">
+                    <h1 class="title">
+                        Garden Proud
+                    </h1>
+                    <h2 class="subtitle">
+                        For Gardening Enthusiasts
+                    </h2>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href= "/">
+      Home
+      </a>
+        {{#if loggedIn}}
+            <a class="navbar-item" href="/profile">My Garden</a> </li>
+        {{else}}
+             <a class= "navbar-item" href="/login">Login</a>
+        {{/if}}  
+      </a>
+        {{#if loggedIn}}
+            <a class="navbar-item" id="logout">Logout</a> 
+        {{/if}}  
+    </div>
+  </div>
+</nav>
+        {{!-- <section class="hero is-medium has-bg-img">
+            <img is-bg-img
+            <div class="hero-container">
+                
+                <div class="hero-body">
+                    <img src="\images\heroImage.jpg"/>
+                    <p class="title">Garden Proud</p>
+                    <p class="subtitle">
+                    For Gardening Enthusiasts
+                    </p>
+                </div>
+            </div>
+        </section> --}}
         <div class="flex-column justify-space-around">
-            <header class="display-flex justify-space-between align-center p-2">
+            {{!-- <header class="display-flex justify-space-between align-center p-2">
                 <nav>
                     <a href="/">Home</a>
                     <!-- Conditionally render login or logout links -->
@@ -35,7 +84,7 @@
                     <a href="/login">Login</a>
                     {{/if}}
                 </nav>
-            </header>
+            </header> --}}
             <main class="container container-fluid mt-5">
                 <!-- Render the sub layout -->
                 <div>
@@ -49,7 +98,7 @@
                 </div>
             </footer>
         </div>
-    </div>
+    {{!-- </div> --}}
     
     <!-- Render script for logged in users only -->
     {{#if loggedIn}}
