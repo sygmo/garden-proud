@@ -1,8 +1,9 @@
+{{!-- <div class="row is-centered"> --}}
 <div class="columns is-multiline">
     {{#each seasons as |season|}}
-    <div class="column">
+    <div class="column is-multiline">
         <a href="/season/{{season}}">
-            <div class="card link-card">
+            <div class="card seasonCard link-card">
                 <div class="card-image">
                     <figure class="image is-4by3">
                         {{#eq season "Spring"}}
@@ -16,7 +17,7 @@
                         {{/eq}}
                     </figure>
                 </div>
-                <header class="card-header">
+                <header class="card-content">
                     <p class="card-header-title">
                         {{season}}
                     </p>
@@ -26,3 +27,4 @@
     </div>
     {{/each}}
 </div>
+{{!-- </div> --}}
