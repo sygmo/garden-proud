@@ -4,7 +4,6 @@
     padding-bottom: 2.5rem;
 }
 
-
 .image{
     width: 80%;
     margin: 0 auto;
@@ -17,15 +16,77 @@ footer {
     height: 2.5rem;
     padding: 2rem 1rem 4rem !important;
 }
+
+.pageHeader {
+    background-image: url("../images/heroImage.png")
+}
+
+.titleContainer {
+    width: 400px;
+    border-radius: 8px;
+    border-color: white;
+    color: white;
+    background-size: 10px;
+    backdrop-filter: blur(4px);
+    font-size: 2rem;
+    backdrop-filter: brightness(60%);
+    
+}
+.title {
+    color: white;
+    font-size: 3.5rem;
+}
+.subtitle {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navlinks {
+    width: 400px;
+    border-radius: 8px;
+    background-size: 10px;
+    backdrop-filter: blur(4px);
+    backdrop-filter: brightness(60%);
+}
+
+.pageLink {
+    color: white;
+}
+
+.login-card {
+    
+  max-width: 100%;
+  padding: 20px;
+  border: 3px solid #666968;
+  border-radius: 0.3rem;
+  border-style: double;
+  border-width: thick;
+  background-color: #e6ecec;
+  color: black;
+
+}
+.input{
+  border: 2px solid rgb(156, 153, 153);
+  padding: 10px;
+
+}
+.page-title{
+  padding: 10px;
+  font-weight: bold;
+}
+.button{
+  font-weight: bold;
+}
+
 main {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-  }
-  nav {
+}
+nav {
     display: flex;
     background-color: #b3dbcf;
-  }  
+}  
 
 .link-card {
   height: 200px;
