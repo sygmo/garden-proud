@@ -1,6 +1,28 @@
-<section class="card">
+{{!-- <section class="card">
   <a href="/season/{{season}}">
     <header>{{season}}</header><!-- name of season-->
     <img src="/images/anemone.jpeg" alt="seasonal flowers"><!-- name of plant-->
   </a>
-</section>
+</section> --}}
+
+<div class="card">
+  <a href="/season/{{season}}">
+  <div class="card-image">
+    <figure class="image is-4by3">
+      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-48x48">
+          <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="media-content">
+        <p class="title is-4">{{season}}</p>
+      </div>
+    </div>
+  </div>
+  </a>
+</div>

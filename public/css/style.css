@@ -5,7 +5,6 @@
 }
 
 .image{
-    width: 80%;
     margin: 0 auto;
 }
 
@@ -107,4 +106,16 @@ nav {
 .garden-title {
     padding-bottom: 30px;
     font-weight: bold;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+}
+
+.seasonCard {
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+
 }
