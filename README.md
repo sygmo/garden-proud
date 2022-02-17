@@ -12,4 +12,4 @@ Garden Proud is for gardening enthusiasts! Users have their own "gardens" on the
 
 ## Development
 
-This app was made in Node, Express, MySQL, and Sequelize. For the frontend styling we used Bulma.
+This app was made in Node, Express, MySQL, and Sequelize. Bulma and the npm package handlebars-helpers were used for the front-end.
