@@ -49,10 +49,6 @@ footer {
     backdrop-filter: brightness(60%);
 }
 
-.pageLink {
-    color: white;
-}
-
 .login-card {
     
   max-width: 100%;
@@ -91,6 +87,17 @@ nav {
 .link-card {
   height: 200px;
   width: 200px;
+}
+
+.plantImage {
+    padding: 10px;
+    max-width: 500px;
+    max-height: 500px;
+    justify-content: center;
+}
+
+.plantNames {
+    color: black;
 }
 
 .garden-title {

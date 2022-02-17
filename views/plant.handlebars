@@ -1,9 +1,5 @@
 {{!-- just a basic layout of plant page, once displayed we can style it more --}}
 <!--save button-->
-  <button class="save-button" id="save" data-id={{plant.id}}>Save</button>
-
-
-
 {{!-- <figure class = "image is-4by3">
     <img src="/images/{{plant.fileName}}">
 </figure>
@@ -18,14 +14,19 @@
 
 <div class="card plantCard">
   <div class="card-image">
-    <figure class="image">
+    <figure class="image plantImage">
       <img src="/images/{{plant.fileName}}" alt="Plant image">
     </figure>
   </div>
+  {{#if loggedIn}}
+  <div class="gardenButton">
+    <button class="button is-success save-button" id="save" data-id={{plant.id}}>Add to My Garden</button>
+  </div>
+  {{/if}}
     <div class="card-content">
         <div class="media-content">
-            <p class="title is-4">Common name: {{plant.common_name}}</p>
-            <p class="subtitle is-6">Latin name: {{plant.latin_name}}</p>
+            <p class="title is-4 plantNames">Common name: {{plant.common_name}}</p>
+            <p class="subtitle is-6 plantNames">Latin name: {{plant.latin_name}}</p>
             <br>
         </div>
         <div class="content">
