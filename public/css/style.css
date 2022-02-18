@@ -114,8 +114,17 @@ nav {
 }
 
 .seasonCard {
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 500px;
     justify-content: center;
 
+}
+
+.card:hover {
+    border-color: green;
+    border: 10px;
+}
+
+.garden-title {
+    font-size: 2rem;
 }

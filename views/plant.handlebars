@@ -13,11 +13,11 @@
 </div> --}}
 
 <div class="card plantCard">
-  <div class="card-image">
+  {{!-- <div class="card-image"> --}}
     <figure class="image plantImage">
       <img src="/images/{{plant.fileName}}" alt="Plant image">
     </figure>
-  </div>
+  {{!-- </div> --}}
   {{#if loggedIn}}
   <div class="gardenButton">
     <button class="button is-success save-button" id="save" data-id={{plant.id}}>Add to My Garden</button>
@@ -32,13 +32,15 @@
         <div class="content">
             {{plant.description}}
         <br>
+        <br>
+        <p>{{plant.common_name}} plants reach maturity in {{plant.season}}.</p>
         </div>
     </div>
 </div>
 
-<div class="box">
+{{!-- <div class="box">
     <p>This plant reaches maturity in {{plant.season}}.</p>
-</div>
+</div> --}}
 
 
 <script src="/js/plant.js"></script>
